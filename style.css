@@ -15,14 +15,15 @@
         margin:0px; /* Margem Externa */ 
         padding:0px; /* Margem Interna */
         
-        background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+        background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 32.84%), #303030;
         background-repeat: no-repeat;
+        
     }
 
     /* Menu de Navegação Principal */
     #principal{
         width:100%;
-        height:100px;
+        height: 100px;
         background-color: var(--preto-dnc);    
         
         display:flex;
@@ -272,3 +273,63 @@
             border-right: 3px solid white;
             
         }
+
+        @media only screen and (max-width: 600px){
+             /* Menu */
+        #principal{        
+        flex-direction: column;
+        height:auto;
+    }
+
+    #menu{
+        flex-direction: column;
+        width:100%;   
+        margin:0px;     
+        
+    }
+
+    #menu a{
+        display:flex;
+        align-items: center;
+        height:50px;      
+        
+    }
+
+    #principal button{
+        width:100%;
+        margin:0px;
+    }
+
+    /* Section */
+
+    section h1{
+        font-size:38px;
+    }
+
+    section h2{
+        font-size:28px;
+        padding-right:15px;
+        padding-left:15px;
+    }
+
+    form{
+        width: 95%;
+        font-size:20px
+    }
+
+    .checkbox-itens label{
+        font-size:17px;
+    }
+
+    /* Footer */
+
+    footer .linha1{
+        flex-direction: column;
+    }
+
+    footer .endereco{
+        width:95%;
+        margin-bottom: 20px;
+    }
+        }
+
