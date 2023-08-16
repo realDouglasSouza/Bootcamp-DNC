@@ -38,11 +38,12 @@
             align-items: center;
 
             margin-left:5%;
+           
         }
 
         #principal div a{
             font-family: var(--fonte-padrao);
-            font-size:25px;
+            font-size:22px;
             font-weight:600;
             color:white;
             text-decoration: none;
@@ -61,7 +62,7 @@
             width:80px;
 
             font-family: var(--fonte-padrao);
-            font-size:20px;
+            font-size:22px;
             font-weight: 600;
             color:white;
 
@@ -165,4 +166,109 @@
             margin-top:100px;
             box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
             cursor:pointer;
+        } 
+
+        input[type="submit"]:hover {
+            color: var(--cinza-hover);
+            transform: translateY(-5px);
+            transition-duration: 0.5s;
+            box-shadow: 0px 12px 4px rgba(119, 171, 238, 0.25);
+        }
+
+        /* FOOTER*/
+
+        footer {
+            width: 100%;
+            background-color: var(--azul-dnc);
+
+        }
+
+        footer .linha1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        footer ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        footer ul li {
+            text-align: center;
+            color: white;
+            font-family: var(--fonte-padrao);
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0px 20px 0px;
+        }
+
+        footer nav{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            height: 330px;
+        }
+
+        footer h5 {
+            text-align: center;
+            color: white;
+            font-weight: 800;
+            font-size: 18px;
+            font-family: var(--fonte-padrao);
+            background-color: var(--preto-dnc);
+            border-radius: 10px;
+            border: 0px;
+            padding: 10px 10px 10px 10px;
+            margin-bottom: 15px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer .endereco {
+            font-weight: 600;
+            font-size: 18px;
+            font-family: var(--fonte-padrao);
+            color: white;
+            text-align: center;
+            width: 28%;
+        }
+
+        footer ul li a:hover {
+            color: var(--cinza-hover);
+        }
+
+        footer .linha2 {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            align-items: center;
+           
+        }
+
+        footer .linha2 a {
+            text-decoration: none;
+            color: white;
+            font-family: var(--fonte-padrao);
+            font-size: 18px;
+            font-weight: 600;
+            padding: 0px 10px 0px 10px;
+            margin: 0px;
+           
+        }
+
+        footer .linha2 a:hover {
+            color: var(--cinza-hover);
+        }
+
+        footer .linha2 a:first-child {
+            border-right: 3px solid white;
+            
         }
